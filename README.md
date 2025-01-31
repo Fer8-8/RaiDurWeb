@@ -1,64 +1,107 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# **RaiDur Web Page**
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este es mi intento de hacer un *"ReadMe"* que sea util, aqui pondre toda la informacion que crea necesaria para que sepan
+como trabajar en este projecto. **-Fer**
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## **Tabla de contenidos**
+1. [Project Overview](#project-overview)
+2. [Prerequisitos](#prerequisitos)
+3. [Instrucciones para el Set Up](#instrucciones-para-el-set-up)
+4. [Recursos utiles](#instrucciones-para-el-set-up)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## **Project Overview**
+Este proyecto es una aplicación web construida con:
+- **Backend**: Laravel (framework PHP) para el manejo de solicitudes API y operaciones de base de datos.
+- **Frontend**: React (librería JavaScript) para construir la interfaz de usuario.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## **Prerequisitos**
+Antes de configurar el proyecto, asegúrate de tener instalado lo siguiente:
+- [Laragon](https://laragon.org/)
+- [Composer](https://getcomposer.org/)
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
 
-## Laravel Sponsors
+Si han seguido todo lo que hemos echo con el profe ya deberian tener todo esto.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+---
 
-### Premium Partners
+## **Instrucciones para el Set Up**
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+### **1. Inicia Laragon**
+Abre la terminal de laragon y escribes los siguientes comandos para copiar el projecto:
+```bash
+git clone https://github.com/Fer8_8/RaiDur.git
+cd RaiDur
+```
+Antes de hacer esto creo que necesitan si o si enviarme su nombre de usuario para agregarlos al repositorio.
 
-## Contributing
+Creo que no es necesario pero por si acaso tambien usen estos comandos para instalar todas las dependencias necesarias.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+composer install
+npm install
+```
 
-## Code of Conduct
+Pueden abrir el projecto en VSCode con el siguiente comando  
+```bash
+code .
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### **2. Configura el archivo .env**
 
-## Security Vulnerabilities
+Agrega tu contraseña entre comillas para poder acceder a mySql
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=RaiDur
+DB_USERNAME=root
+DB_PASSWORD= "Tu contraseña :D"
+```
 
-## License
+Agrega la info para la API de correos
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```env
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=03191c
+MAIL_PASSWORD=b6fadd
+MAIL_ENCRYPTION=tls
+```
+Es lo que sacamos de de la pagina de [mailtrap](https://mailtrap.io).
+
+### **3. Migra la base de datos**
+
+Escribe el siguiente comando en la terminal de laragon.
+
+```bash
+php artisan migrate
+```
+### **4. Acceder a la web**
+
+ Si tienen activado Laragon pueden acceder a la pagina web en la que estan trabajando a travez del siguiente enlace [RaiDur.test](Raidur.test) o [RaiDur.test:82](Raidur.test:82) si cambiaron el puerto al puerto 82.
+
+---
+
+ ## **Recursos utiles**
+
+ Una lista de recursos utiles para aprender las tecnologias necesarias.
+
+ - [Tutorial de git](https://www.youtube.com/watch?v=vlCXdvcgiE0)
+ - [Tutorial de Laravel + React](https://www.youtube.com/watch?v=VrQRa-afCAk&t=1483s) (Esto es lo mas parecido a lo que vamos a estar haciendo nosotros)
+- [Documentacion de Laravel](https://laravel.com/docs/11.x/readme)
+ 
+Ire añadiendo mas recursos en el futuro.
+
+---
+
+*Planeo agragar mas cosas utilies en este README, sientanse libres de cambiar cualquier cosa de este README si lo ven necesario.*
