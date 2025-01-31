@@ -37,7 +37,7 @@ Si han seguido todo lo que hemos echo con el profe ya deberian tener todo esto.
 ### **1. Inicia Laragon**
 Abre la terminal de laragon y escribes los siguientes comandos para copiar el projecto:
 ```bash
-git clone https://github.com/Fer8_8/RaiDur.git
+git clone https://github.com/Fer8_8/RaiDurWeb.git
 cd RaiDur
 ```
 Antes de hacer esto creo que necesitan si o si enviarme su nombre de usuario para agregarlos al repositorio.
