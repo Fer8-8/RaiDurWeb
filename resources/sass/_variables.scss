@@ -1,5 +1,5 @@
 // Body
-$body-bg: #f8fafc;
+$body-bg: $white;
 
 
 
@@ -9,4 +9,11 @@ $font-family-sans-serif: 'Saira', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
-$warning: #E5BC48;
+//Colors
+$primaryColor: #E5BC48;
+$secondaryColor: #F7DA2F;
+$highlightColor: #F7AA2F;
+$SupportingColor: #F7E681;
+
+
+$primary: $primaryColor;
