@@ -38,13 +38,9 @@
                     <li class="nav-item">
                         <a href="" class="nav-link text-white">Servicios</a>
                     </li>
-<<<<<<< HEAD
-                    <li class="nav-item"><a href="" class="nav-link text-white saira-font">Nosotros hola</a></li>
-=======
-                    <li class="nav-item"><a href="" class="nav-link text-white saira-font">Nosotros abc</a></li>
->>>>>>> origin/HEAD
+                    <li class="nav-item"><a href="" class="nav-link text-white saira-font">Nosotros</a></li>
                     <li class="nav-item"><a href="" class="nav-link text-white saira-font">FAQs</a></li>
-                    <button type="button" class="btn btn-warning p-1 mx-3 saira-font">Iniciar Sesion</button>
+                    <button type="button" class="btn btn-warning px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN</strong></button>
 
                     <!-- Authentication Links -->
                     <!---
