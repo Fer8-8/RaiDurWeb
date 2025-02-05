@@ -40,7 +40,7 @@
                     </li>
                     <li class="nav-item"><a href="" class="nav-link text-white saira-font">Nosotros</a></li>
                     <li class="nav-item"><a href="" class="nav-link text-white saira-font">FAQs</a></li>
-                    <button type="button" class="btn btn-warning px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN</strong></button>
+                    <button type="button" class="btn btn-primary px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN</strong></button>
 
                     <!-- Authentication Links -->
                     <!---
