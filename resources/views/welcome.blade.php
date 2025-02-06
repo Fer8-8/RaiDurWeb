@@ -24,4 +24,13 @@
     </button>
   </div>
 
+<div class="d-flex flex-column align-items-center">
+  <h2 class="text-center pt-5 m-0">Productos</h2>
+  <div class="bg-primary rounded" style="width:80px; height:5px"></div>
+</div>
+
+<div class="container">
+  
+</div>
+
 @endsection
