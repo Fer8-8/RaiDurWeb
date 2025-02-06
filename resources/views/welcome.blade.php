@@ -31,9 +31,9 @@
 
 <div class="fluid-container text-center p-2" >
   <div class="row justify-content-center">
-    <img class="col-2" src="SVGs/calentadorT.svg" alt="calentador">
-    <img class="col-2" src="SVGs/cisternav2F.svg" alt="cisterna">
+    <img class="col-2" src="SVGs/cisternav2F.svg" alt="calentador">
     <img class="col-2" src="SVGs/cisternav3F.svg" alt="cisterna">
+    <img class="col-2" src="SVGs/calentadorT.svg" alt="cisterna">
     <img class="col-2" src="SVGs/TuberiaT.svg" alt="tuberia">
   </div>
 </div>
