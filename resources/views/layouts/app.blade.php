@@ -26,7 +26,7 @@
 
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav me-auto">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{{ route('welcome') }}">
                         <img class='mx-2' src="/Images/RaiDurLogo.jpg" alt="Logo" width="auto" height="40">
                         <img src="/Images/RaiDurLogoText.jpg" alt="Logo" width="auto" height="40">
                       </a>
@@ -40,8 +40,12 @@
                     </li>
                     <li class="nav-item"><a href="" class="nav-link text-white saira-font">Nosotros</a></li>
                     <li class="nav-item"><a href="" class="nav-link text-white saira-font">FAQs</a></li>
-                    <button type="button" class="btn btn-primary px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN</strong></button>
+                    @guest
+                        <a href="{{ route('login') }}" type="button" class="btn btn-primary px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN </strong></a>
 
+                    @else
+                        <li class="nav-item">asdfajsfd</li>
+                    @endguest
                     <!-- Authentication Links -->
                     <!---
                     @guest
