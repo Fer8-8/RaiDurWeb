@@ -32,12 +32,12 @@
   <div class="bg-primary rounded" style="width:80px; height:5px"></div>
 </div>
 
-<div class="fluid-container text-center p-2" >
-  <div class="row justify-content-center">
-    <img class="col-2" src="SVGs/cisternav2F.svg" alt="calentador">
-    <img class="col-2" src="SVGs/cisternav3F.svg" alt="cisterna">
-    <img class="col-2" src="SVGs/calentadorT.svg" alt="cisterna">
-    <img class="col-2" src="SVGs/TuberiaT.svg" alt="tuberia">
+<div class="fluid-container text-center pt-4" style="height:100px">
+  <div class="row justify-content-center m-0 p-0">
+    <img class="col-2 d-block w-10" height="80px" src="SVGs/cisternav2F.svg" alt="calentador">
+    <img class="col-2 d-block w-10" height="80px" src="SVGs/cisternav3F.svg" alt="cisterna">
+    <img class="col-2 d-block w-10" height="80px" src="SVGs/calentadorT.svg" alt="cisterna">
+    <img class="col-2 d-block w-10" height="80px" src="SVGs/TuberiaT.svg" alt="tuberia">
   </div>
 </div>
 
