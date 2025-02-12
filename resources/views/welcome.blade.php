@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@vite(['resources/css/app.css'])
 
 
 <div id="carouselExample" class="carousel slide">
