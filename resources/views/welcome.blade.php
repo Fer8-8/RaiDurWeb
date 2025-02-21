@@ -36,7 +36,10 @@
 <div class="fluid-container text-center pt-4" style="height:100px">
   <div class="row justify-content-center m-0 p-0">
     <img class="col-2 d-block w-10" height="80px" src="SVGs/cisternav2F.svg" alt="calentador">
-    <img class="col-2 d-block w-10" height="80px" src="SVGs/cisternav3F.svg" alt="cisterna">
+    
+    <a href="{{ route('cisternas') }}">
+    <img class="col-2 d-block w-10" height="80px" src="{{ asset('SVGs/cisternav3F.svg') }}" alt="cisterna"> </a>
+
     <img class="col-2 d-block w-10" height="80px" src="SVGs/calentadorT.svg" alt="cisterna">
     <img class="col-2 d-block w-10" height="80px" src="SVGs/TuberiaT.svg" alt="tuberia">
   </div>
