@@ -15,3 +15,28 @@
 .text-shadow-lg {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
 }
+
+.custom-form {
+    width: 350px;
+    height: 320px;
+    background-color: #d9a520;
+    /* Color dorado */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-form label {
+    font-weight: bold;
+    display: block;
+}
+
+.custom-form button {
+    border-radius: 8px;
+}
+
+.map-container iframe {
+    border-radius: 15px;
+    max-width: 450px;
+    height: 320px;
+}

@@ -5,32 +5,6 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600&display=swap');
-
- .custom-form {
-  width: 350px; 
-  background-color: #d9a520; /* Color dorado */
-  border-radius: 15px;
-  padding: 20px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
-}
-
-.custom-form label {
-  font-weight: bold;
-  display: block;
-}
-
-.custom-form button {
-  border-radius: 8px;
-}
-
-.map-container iframe {
-  border-radius: 15px;
-  width: 100%;
-  max-width: 450px;
-  height: 320px;
-}
-
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11998,4 +11972,29 @@ textarea.form-control-lg {
 
 .text-shadow-lg {
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.custom-form {
+  width: 350px;
+  height: 320px;
+  background-color: #d9a520;
+  /* Color dorado */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.custom-form label {
+  font-weight: bold;
+  display: block;
+}
+
+.custom-form button {
+  border-radius: 8px;
+}
+
+.map-container iframe {
+  border-radius: 15px;
+  max-width: 450px;
+  height: 320px;
 }
