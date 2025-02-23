@@ -33,17 +33,26 @@
   <div class="bg-primary rounded" style="width:80px; height:5px"></div>
 </div>
 
-<div class="fluid-container text-center pt-4" style="height:100px">
-  <div class="row justify-content-center m-0 p-0">
-    <img class="col-2 d-block w-10" height="80px" src="SVGs/cisternav2F.svg" alt="calentador">
-    
-    <a href="{{ route('cisternas') }}">
-    <img class="col-2 d-block w-10" height="80px" src="{{ asset('SVGs/cisternav3F.svg') }}" alt="cisterna"> </a>
-
-    <img class="col-2 d-block w-10" height="80px" src="SVGs/calentadorT.svg" alt="cisterna">
-    <img class="col-2 d-block w-10" height="80px" src="SVGs/TuberiaT.svg" alt="tuberia">
-  </div>
+<div class="container text-center pt-4">
+    <div class="row justify-content-center m-0 p-0">
+        <a href="{{ route('tinacos') }}" class="col-2 text-center">
+            <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/cisternav2F.svg') }}" alt="tinacos">
+        </a>
+        <a href="{{ route('cisternas') }}" class="col-2 text-center">
+            <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/cisternav3F.svg') }}" alt="cisterna">
+        </a>
+        <a href="{{ route('calentadores') }}" class="col-2 text-center">
+            <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/calentadorT.svg') }}" alt="calentadores">
+        </a>
+        <a href="{{ route('otros') }}" class="col-2 text-center">
+            <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/TuberiaT.svg') }}" alt="otros">
+        </a>
+    </div>
 </div>
+
+
+
+
 
 <div class="d-flex flex-column align-items-center mb-4">
   <h2 class="text-center pt-5 m-0">Servicios</h2>

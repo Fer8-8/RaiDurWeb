@@ -31,3 +31,15 @@ Route::post('/contacto/enviar', [ContactoController::class, 'enviar'])->name('co
 Route::get('/cisternas', function () {
     return view('cisternas'); // Carga la vista nueva
 })->name('cisternas');
+
+Route::get('/tinacos', function () {
+    return view('tinacos'); // Carga la vista nueva
+})->name('tinacos');
+
+Route::get('/calentadores', function () {
+    return view('calentadores'); // Carga la vista nueva
+})->name('calentadores');
+
+Route::get('/otros', function () {
+    return view('otros'); // Carga la vista nueva
+})->name('otros');
