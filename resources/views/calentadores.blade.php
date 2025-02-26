@@ -6,7 +6,7 @@
     <title>Página de Calentadores</title>
 </head>
 <body>
-    <h1>Bienvenido a la Página de Calentadores</h1>
+    <h1>Bienvenido a la Página de Calentadores Hola</h1>
     <p>Esta es la página de información sobre cisternas.</p>
 </body>
 </html>
