@@ -1,77 +1,78 @@
 @extends('layouts.app')
 
+@section('head')
+<style>
+    body {
+        background: url('Images/background.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .login-container {
+        width: 80vh;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        position: absolute;
+        display: block;
+        margin: 0 auto 15px;
+        width: 80px;
+        top: -60px;
+        transform: scale(2.5);
+    }
+    .box{
+        position: relative;
+    }
+    .login-btn{
+        height: 30px;
+        font-size: 12px;
+        flex: 1;
+    }
+    .f-btn{
+        background-color: #1877F2 ;
+    }
+</style>
+@endsection
+
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="login-container text-center px-5 pb-0">
+        <div class="d-flex justify-content-center box my-3">  
+            <img src="Images/Logo.png" alt="RaiDur Logo" class="logo">
+        </div>
+        <form class="mt-5">
+            <div class="mb-3 text-start fw-bold">
+                <label class="form-label">Nombre:</label>
+                <input id="nombre" class="form-control border border-black" required>
+            </div>
+            <div class="mb-3 text-start fw-bold">
+                <label class="form-label">Nombre de usuario:</label>
+                <input id="usuario" class="form-control border border-black" required>
+            </div>
+            <div class="mb-3 text-start fw-bold">
+                <label for="mail" class="form-label">Correo electronico:</label>
+                <input type="mail" class="form-control border border-black" required>
+            </div>
+            <div class="mb-3 text-start fw-bold">
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" class="form-control border border-black" required>
+            </div>
+            <div class="mb-3 text-start fw-bold">
+                <label for="password" class="form-label">Confirmar contraseña:</label>
+                <input type="password" class="form-control border border-black" required>
+            </div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div>
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Recuérdame</label>
                 </div>
             </div>
-        </div>
+            <button type="submit" class="btn btn-primary px-4 fw-bold text-shadow-sm border border-black">ACCEDER</button>
+        </form>
+        <a class="text-start text-black mt-3 d-block" href="#">Términos y condiciones</a>
     </div>
 </div>
+
 @endsection
