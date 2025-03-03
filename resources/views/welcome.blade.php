@@ -44,7 +44,7 @@
         <a href="{{ route('calentadores') }}" class="col-2 text-center">
             <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/calentadorT.svg') }}" alt="calentadores">
         </a>
-        <a href="{{ route('otros') }}" class="col-2 text-center">
+        <a href="{{ route('articulos') }}" class="col-2 text-center">
             <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/TuberiaT.svg') }}" alt="otros">
         </a>
     </div>

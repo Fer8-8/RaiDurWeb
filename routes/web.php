@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\ProductoController;
+
+Route::post('/productos', [ProductoController::class, 'store'])->name('productos.store');
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +43,6 @@ Route::get('/calentadores', function () {
     return view('calentadores'); // Carga la vista nueva
 })->name('calentadores');
 
-Route::get('/otros', function () {
-    return view('otros'); // Carga la vista nueva
-})->name('otros');
+
+
+Route::get('/articulos', [ProductoController::class, 'index'])->name('articulos');

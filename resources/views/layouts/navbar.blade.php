@@ -25,7 +25,8 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm d-flex justify-content-between">
+        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm fixed-top d-flex justify-content-between">
+
             <div class="container-fluid mx-0">
 
                 <!-- Left Side Of Navbar -->
