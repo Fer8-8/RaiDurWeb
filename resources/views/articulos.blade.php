@@ -1,7 +1,5 @@
 @extends('layouts.navbar')
 
-@extends('layouts.app')
-
 @section('content')
 <div class="container mt-5">
     <div class="row">
@@ -31,7 +29,7 @@
                     <div class="col-md-6 mb-4">
                         <div class="card shadow-lg border-0 rounded-4 p-3">
                             <h5 class="fw-bold">{{ $producto->nombre }}</h5>
-                            <img src="{{ asset('storage/' . $producto->imagen) }}" class="img-fluid rounded">
+                            <img src="{{ asset($producto->imagen) }}" class="img-fluid w-100 object-fit-cover" style="height: 200px;">
                             <h4 class="text-danger fw-bold mt-3">${{ number_format($producto->precio, 2) }}</h4>
                             <p class="text-muted">{{ $producto->descripcion }}</p>
                             <button class="btn btn-warning fw-bold">AGREGAR AL CARRITO</button>
