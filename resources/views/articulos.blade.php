@@ -1,13 +1,14 @@
 @extends('layouts.navbar')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <div class="container mt-5">
     <div class="row">
         <!-- Sidebar con categorías y filtros -->
         <div class="col-md-3">
             <h5 class="fw-bold text-warning">CATEGORÍA</h5>
             <ul class="list-unstyled">
-                <li><input type="checkbox"> Minisplit</li>
+                <li><input type="checkbox" class=""> Minisplit</li>
                 <li><input type="checkbox"> Biodigestores</li>
                 <li><input type="checkbox"> Juego de baño</li>
                 <li><input type="checkbox"> Boiler de paso</li>
@@ -29,10 +30,10 @@
                     <div class="col-md-6 mb-4">
                         <div class="card shadow-lg border-0 rounded-4 p-3">
                             <h5 class="fw-bold">{{ $producto->nombre }}</h5>
-                            <img src="{{ asset($producto->imagen) }}" class="img-fluid w-100 object-fit-cover" style="height: 200px;">
+                            <img src="{{ asset($producto->imagen) }}" height='300px' style="object-fit: contain" class="">
                             <h4 class="text-danger fw-bold mt-3">${{ number_format($producto->precio, 2) }}</h4>
                             <p class="text-muted">{{ $producto->descripcion }}</p>
-                            <button class="btn btn-warning fw-bold">AGREGAR AL CARRITO</button>
+                            <button class="btn btn-warning fw-bold fs-4">AGREGAR AL CARRITO</button>
                         </div>
                     </div>
                 @endforeach

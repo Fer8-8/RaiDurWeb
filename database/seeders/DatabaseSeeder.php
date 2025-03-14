@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
             'descripcion' => 'Minisplit 1 ton / 110-220 volt / frío y calor',
             'precio' => 6100,
             'imagen' => 'Images/imageotros1.png'
+            
         ]);
 
         Producto::create([
