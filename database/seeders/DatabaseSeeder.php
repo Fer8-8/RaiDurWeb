@@ -4,6 +4,10 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Producto;
+use App\Models\Tinacos;
+
+
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -74,6 +78,48 @@ class DatabaseSeeder extends Seeder
             'descripcion' => 'Pintura Doal / cubeta 19 litros / casa-',
             'precio' => 780,
             'imagen' => 'Images/imageotros10.png'
+        ]);
+        Tinacos::create([
+            'nombre' => 'TINACO 1,100 lts',
+            'descripcion' => 'Tricapa / Diámetro 1.10 mts / Altura 1.41 mts',
+            'precio' => 1790.00,
+            'imagen' => 'Images/tricapa110.png',
+            'categoria' => 'Protección'
+        ]);
+        Tinacos::create([
+            'nombre' => 'TINACO 450 lts',
+            'descripcion' => 'Bicapa / Diámetro 0.82 mts / Altura 1.05 mts',
+            'precio' => 1090.00,
+            'imagen' => 'Images/bicapa450.png',
+            'categoria' => 'Protección'
+        ]);
+        Tinacos::create([
+            'nombre' => 'TINACO 750 lts',
+            'descripcion' => 'Tricapa / Diámetro 1.3 mts / Altura 1.14 mts',
+            'precio' => 1595.00,
+            'imagen' => 'Images/tricapa750.png',
+            'categoria' => 'Protección'
+        ]);
+        Tinacos::create([
+            'nombre' => 'TINACO 750 lts',
+            'descripcion' => 'Bicapa / Diámetro 1.3 mts / Altura 1.14 mts',
+            'precio' => 1395.00,
+            'imagen' => 'Images/bicapa750.png',
+            'categoria' => 'Protección'
+        ]);
+        Tinacos::create([
+            'nombre' => 'TINACO 1,100 lts',
+            'descripcion' => 'Bicapa / Diámetro 1.10 mts / Altura 1.41 mts',
+            'precio' => 1595.00,
+            'imagen' => 'Images/bicapa1100.png',
+            'categoria' => 'Protección'
+        ]);
+        Tinacos::create([
+            'nombre' => 'TINACO 450 lts',
+            'descripcion' => 'Tricapa / Diámetro 0.82 mts / Altura 1.05 mts',
+            'precio' => 1195.00,
+            'imagen' => 'Images/tricapa450.png',
+            'categoria' => 'Protección'
         ]);
     }
 }

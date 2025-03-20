@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\TinacoController;
+
+Route::get('/tinacos', [TinacoController::class, 'index'])->name('tinacos');
+
 
 Route::post('/productos', [ProductoController::class, 'store'])->name('productos.store');
 
@@ -34,10 +38,6 @@ Route::post('/contacto/enviar', [ContactoController::class, 'enviar'])->name('co
 Route::get('/cisternas', function () {
     return view('cisternas'); // Carga la vista nueva
 })->name('cisternas');
-
-Route::get('/tinacos', function () {
-    return view('tinacos'); // Carga la vista nueva
-})->name('tinacos');
 
 Route::get('/calentadores', function () {
     return view('calentadores'); // Carga la vista nueva
