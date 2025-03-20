@@ -10,6 +10,6 @@ class SolarController extends Controller
     public function index()
     {
         $calentadores = Solar::all(); // Obtener todos los solares
-        dd($calentadores);
+        return view('calentadores', compact('calentadores'));
     }
 }
