@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body style="padding-top:0px">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm fixed-top d-flex justify-content-between">
 
