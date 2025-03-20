@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\TinacoController;
+use App\Http\Controllers\SolarController;
+
+Route::get('/solares', [SolarController::class, 'index'])->name('calentadores');
+
 
 Route::get('/tinacos', [TinacoController::class, 'index'])->name('tinacos');
 
@@ -39,9 +43,7 @@ Route::get('/cisternas', function () {
     return view('cisternas'); // Carga la vista nueva
 })->name('cisternas');
 
-Route::get('/calentadores', function () {
-    return view('calentadores'); // Carga la vista nueva
-})->name('calentadores');
+
 
 
 
