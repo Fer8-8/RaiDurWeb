@@ -42,18 +42,19 @@
         <div class="d-flex justify-content-center box my-3">  
             <img src="Images/Logo.png" alt="RaiDur Logo" class="logo">
         </div>
-        <form class="mt-5">
+        <form method="POST" action="{{ route('login') }} class="mt-5">
+            @csrf
             <div class="mb-3 text-start fw-bold">
-                <label for="mail" class="form-label">Correo electronico:</label>
-                <input id="mail" type="email" class="form-control border border-black" required>
+                <label for="mail" class="form-label">Correo electrónico:</label>
+                <input id="mail" name="email" type="email" class="form-control border border-black" required>
             </div>
             <div class="mb-3 text-start fw-bold">
-                <label for="mail" class="form-label">Contraseña:</label>
-                <input type="password" class="form-control border border-black" required>
+                <label for="password" class="form-label">Contraseña:</label>
+                <input id="password" name="password" type="password" class="form-control border border-black" required>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <input type="checkbox" id="remember">
+                    <input type="checkbox" id="remember" name="remember">
                     <label for="remember">Recuérdame</label>
                 </div>
                 <a href="#">Olvidé mi contraseña</a>

@@ -25,7 +25,7 @@
     @yield('head')
 
 </head>
-<body>
+<body class="my-0 py-0">
     <div id="app">
         <main class="py-0">
             @yield('content')
