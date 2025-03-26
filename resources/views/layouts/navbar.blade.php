@@ -43,8 +43,12 @@
                     <li class="nav-item">
                         <a href="" class="nav-link text-white">Servicios</a>
                     </li>
-                    <li class="nav-item"><a href="" class="nav-link text-white saira-font">Nosotros</a></li>
-                    <li class="nav-item"><a href="" class="nav-link text-white saira-font">FAQs</a></li>
+                    <li class="nav-item">
+                    <a href="{{ url('/nosotros') }}" class="nav-link text-white saira-font">Nosotros</a>
+                      </li>
+                    <li class="nav-item">
+                    <a href="{{ url('/faqs') }}" class="nav-link text-white saira-font">FAQs</a>
+                    </li>
                     @guest
                         <a href="{{ route('login') }}" type="button" class="btn btn-primary px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN </strong></a>
 

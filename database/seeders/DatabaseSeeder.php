@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Producto;
 use App\Models\Tinacos;
 use App\Models\Solar;
+use App\Models\Cisternas;
 
 
 
@@ -122,19 +123,144 @@ class DatabaseSeeder extends Seeder
             'categoria' => 'Protección'
         ]);
         Solar::create([
-            'nombre' => 'Panel Solar 500W',
-            'descripcion' => 'Panel solar de alta eficiencia con 500W de potencia.',
-            'precio' => 4500.00,
-            'imagen' => 'images/solar500w.jpg',
+            'nombre' => 'Solar 8 tubos',
+            'descripcion' => 'Baja presión / 8 tubos / 2 personas / 100 lts',
+            'precio' => 3150.00,
+            'imagen' => 'Images/solares1.png',
             'categoria' => 'Paneles Solares',
         ]);
-
         Solar::create([
-            'nombre' => 'Batería Solar 200Ah',
-            'descripcion' => 'Batería de litio para almacenamiento de energía solar.',
-            'precio' => 6500.00,
-            'imagen' => 'images/bateria200ah.jpg',
-            'categoria' => 'Baterías',
+            'nombre' => 'Solar 10 tubos',
+            'descripcion' => 'Baja presión / 10 tubos / 3 personas / 130 lts',
+            'precio' => 3500.00,
+            'imagen' => 'Images/solares2.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 12 tubos',
+            'descripcion' => 'Baja presión / 12 tubos / 3 o 4 personas / 150 lts',
+            'precio' => 3750.00,
+            'imagen' => 'Images/solares3.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 15 tubos',
+            'descripcion' => 'Baja presión / 15 tubos / 5 personas / 175 lts',
+            'precio' => 4300.00,
+            'imagen' => 'Images/solares4.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 18 tubos',
+            'descripcion' => 'Baja presión / 18 tubos / 6 personas / 205 lts',
+            'precio' => 4950.00,
+          'imagen' => 'Images/solares5.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 20 tubos',
+            'descripcion' => 'Baja presión / 20 tubos / 6 o 7 personas / 228 lts',
+            'precio' => 5300.00,
+            'imagen' => 'Images/solares6.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 24 tubos',
+            'descripcion' => 'Baja presión / 24 tubos / 8 personas / 274 lts',
+            'precio' => 6300.00,
+           'imagen' => 'Images/solares7.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 30 tubos',
+            'descripcion' => 'Baja presión / 30 tubos / 9 o 10 personas / 300 lts',
+            'precio' => 7200.00,
+           'imagen' => 'Images/solares1.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 36 tubos',
+            'descripcion' => 'Baja presión / 36 tubos / 10 u 11 personas / 410 lts',
+            'precio' => 7985.00,
+            'imagen' => 'Images/solares1.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 12 tubos',
+            'descripcion' => 'Alta presión / 12 tubos / 4 personas / 150 lts',
+            'precio' => 13800.00,
+          'imagen' => 'Images/solares1.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 18 tubos',
+            'descripcion' => 'Alta presión / 18 tubos / 6 personas / 205 lts',
+            'precio' => 17800.00,
+          'imagen' => 'Images/solares1.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 20 tubos',
+            'descripcion' => 'Alta presión / 20 tubos / 6 o 7 personas / 228 lts',
+            'precio' => 19250.00,
+            'imagen' => 'Images/solares1.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Solar::create([
+            'nombre' => 'Solar 28 tubos',
+            'descripcion' => 'Alta presión / 28 tubos / 10 personas / 300 lts',
+            'precio' => 24500.00,
+           'imagen' => 'Images/solares1.png',
+            'categoria' => 'Paneles Solares',
+        ]);
+        Cisternas::create([
+            'nombre' => 'Cisterna 1100 Lts',
+            'descripcion' => 'Diámetro de 1.10 mts / altura de 1.41 mts',
+            'precio' => 2200.00,
+            'imagen' => 'Images/cisternas1.png',
+            'categoria' => 'Almacenamiento de agua',
+        ]);
+        Cisternas::create([
+            'nombre' => 'Cisterna 10000 Lts',
+            'descripcion' => 'Diámetro de 2.32 mts / altura de 2.4 mts',
+            'precio' => 19900.00,
+            'imagen' => 'Images/cisternas2.png',
+            'categoria' => 'Almacenamiento de agua',
+        ]);
+        Cisternas::create([
+            'nombre' => 'Cisterna 5000 Lts',
+            'descripcion' => 'Diámetro de 1.84 mts / altura de 2.40 mts',
+            'precio' => 8600.00,
+            'imagen' => 'Images/cisternas3.png',
+            'categoria' => 'Almacenamiento de agua',
+        ]);
+        Cisternas::create([
+            'nombre' => 'Cisterna 5000 Lts',
+            'descripcion' => 'Diámetro de 1.84 mts / altura de 2.40 mts',
+            'precio' => 8600.00,
+            'imagen' => 'Images/cisternas4.png',
+            'categoria' => 'Almacenamiento de agua',
+        ]);
+        Cisternas::create([
+            'nombre' => 'Cisterna 2700 Lts',
+            'descripcion' => 'Diámetro de 1.52 mts / altura de 1.46 mts',
+            'precio' => 4600.00,
+            'imagen' => 'Images/cisternas5.png',
+            'categoria' => 'Almacenamiento de agua',
+        ]);
+        Cisternas::create([
+            'nombre' => 'Cisterna 1100 Lts',
+            'descripcion' => 'Diámetro de 1.10 mts / altura de 1.41 mts',
+            'precio' => 2200.00,
+            'imagen' => 'Images/cisternas6.png',
+            'categoria' => 'Almacenamiento de agua',
+        ]);
+        Cisternas::create([
+            'nombre' => 'Cisterna 2700 Lts',
+            'descripcion' => 'Diámetro de 1.52 mts / altura de 1.46 mts',
+            'precio' => 4600.00,
+            'imagen' => 'Images/cisternas7.png',
+            'categoria' => 'Almacenamiento de agua',
         ]);
     }
 }
