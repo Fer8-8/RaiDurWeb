@@ -5,6 +5,8 @@ use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\TinacoController;
 use App\Http\Controllers\SolarController;
+use App\Http\Controllers\DireccionController;
+use App\Http\Controllers\CuentaController;
 
 Route::get('/solares', [SolarController::class, 'index'])->name('calentadores');
 
@@ -12,6 +14,7 @@ Route::get('/solares', [SolarController::class, 'index'])->name('calentadores');
 Route::get('/tinacos', [TinacoController::class, 'index'])->name('tinacos');
 
 Route::get('/direccion', [DireccionController::class, 'index'])->name('direccion');
+Route::get('/cuenta', [CuentaController::class, 'index'])->name('cuenta');
 
 
 Route::post('/productos', [ProductoController::class, 'store'])->name('productos.store');
