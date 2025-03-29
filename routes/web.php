@@ -10,16 +10,18 @@ use App\Http\Controllers\CisternasController;
 Route::get('/nosotros', function () {
     return view('nosotros');
 });
+
 Route::get('/faqs', function () {
     return view('faqs');
 });
-Route::get('/servicios', function () {
-    return view('servicios');
-});
+
 Route::get('/solares', [SolarController::class, 'index'])->name('calentadores');
 
 
 Route::get('/tinacos', [TinacoController::class, 'index'])->name('tinacos');
+
+Route::get('/direccion', [DireccionController::class, 'index'])->name('direccion');
+Route::get('/cuenta', [CuentaController::class, 'index'])->name('cuenta');
 
 
 Route::post('/productos', [ProductoController::class, 'store'])->name('productos.store');
