@@ -42,10 +42,17 @@
         <div class="d-flex justify-content-center box my-3">  
             <img src="Images/Logo.png" alt="RaiDur Logo" class="logo">
         </div>
-        <form class="mt-5">
+        <form method="POST" action="{{route('register') }}" class="mt-5">
+            @csrf
             <div class="mb-3 text-start fw-bold">
                 <label class="form-label">Nombre:</label>
-                <input id="nombre" class="form-control border border-black" required>
+                <input id="nombre" type="text" class="form-control border @error('nombre') is invalid @enderror border-black" name="nombre" required autocomplete="nombre" autofocus>
+
+                @error('nombre')
+                    <span class="invalid-feedback">
+                        <strong>{{$message}}</strong>
+                    </span>
+                @enderror
             </div>
             <div class="mb-3 text-start fw-bold">
                 <label class="form-label">Nombre de usuario:</label>
