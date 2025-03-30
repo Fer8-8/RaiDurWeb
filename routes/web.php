@@ -15,6 +15,10 @@ Route::get('/faqs', function () {
     return view('faqs');
 });
 
+Route::get('/servicios', function () {
+    return view('servicios');
+});
+
 Route::get('/solares', [SolarController::class, 'index'])->name('calentadores');
 
 
