@@ -25,8 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $user = Auth::user();
-        dd($user['name']);
-        return view('home');
+
+        return redirect()->route('welcome');
     }
 }

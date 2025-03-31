@@ -4,7 +4,7 @@
 <div class="container p-6">
     <div class="bg-white shadow-md rounded-lg p-6">
         <h2 class="text-xl font-bold flex items-center pt-5">
-            <i class="fa fa-user-circle-o" aria-hidden="true"></i>Eduardo
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>{{Auth::user()->name}}
         </h2>
 
         <!-- Card: Dirección de envío -->
