@@ -2,7 +2,7 @@
 
 @section('content')
 <style>
-    .container {
+    .container1 {
         max-width: 1300px;
         margin: 0 auto;
         padding: 20px;
@@ -85,11 +85,11 @@
     margin-top: 0px; /* Elimina cualquier espacio extra arriba */
     margin-bottom: 10px; /* Ajusta la separación con el <p> */
     background-color: #E5BC48 !important;
-}
+    }
 
 </style>
 
-<div class="container">
+<div class="container1">
     <p class="description">
         En nuestra empresa, no solo fabricamos tinacos, cisternas y calentadores solares de alta calidad, sino que también ofrecemos una gama de servicios especializados para garantizar el mejor rendimiento y durabilidad de nuestros productos. A continuación, nuestra gama de servicios:
     </p>

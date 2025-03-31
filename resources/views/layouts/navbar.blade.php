@@ -107,7 +107,7 @@
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <div class="col-md-5 col-lg-4 col-xl-3 mb-4">
           <!-- Content -->
           <h2 class="fw-bold mb-1">
             RaiDur
@@ -126,7 +126,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h2 class="text-uppercase fw-bold mb-4">
             Sobre nosotros
@@ -144,7 +144,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-5 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h2 class="text-uppercase fw-bold mb-4">
             Contacto
