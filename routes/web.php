@@ -7,6 +7,7 @@ use App\Http\Controllers\TinacoController;
 use App\Http\Controllers\SolarController;
 use App\Http\Controllers\CisternasController;
 use App\Http\Controllers\CuentaController;
+use App\Http\Controllers\DireccionController;
 
 Route::get('/nosotros', function () {
     return view('nosotros');
