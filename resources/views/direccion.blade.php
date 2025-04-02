@@ -175,6 +175,7 @@
       background-color: #000;
       color: white;
     }
+    
   </style>
  <!-- form rectangular vrmerc direcciones brujulario 5b cbtis 130 -->
   <div class="container1">
