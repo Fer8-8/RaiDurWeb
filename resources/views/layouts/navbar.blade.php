@@ -59,8 +59,8 @@
                         <span class="visually-hidden">Toggle Dropdown</span>
                       </button>
                       <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="http://127.0.0.1:8000/cuenta">Mi cuenta</a></li>
-                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                        <li><a class="dropdown-item" href="{{route('cuenta')}}">Mi cuenta</a></li>
+                        <li><a class="dropdown-item" href="{{route('carrito')}}">Carrito</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
