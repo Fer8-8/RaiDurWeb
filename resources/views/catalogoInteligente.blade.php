@@ -208,12 +208,13 @@
       const output = prediction.arraySync()[0];
       const recommended = products.filter((_, index) => output[index] > 0.5);
 
-      document.querySelector(".container").innerHTML = `
+      document.querySelector(".container1").innerHTML = `
         <h2>Cuestionario finalizado ✅</h2>
         <p>Basado en tus respuestas, te recomendamos los siguientes productos:</p>
         <ul style='text-align:left; padding-left: 20px;'>
           ${recommended.map(p => `<li>${p.replace(/_/g, ' ').toUpperCase()}</li>`).join('')}
         </ul>
+        <a href='{{route('cisternas')}}'> Seguir</a>
       `;
 
       responses = [];

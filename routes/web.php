@@ -8,7 +8,6 @@ use App\Http\Controllers\SolarController;
 use App\Http\Controllers\CisternasController;
 use App\Http\Controllers\CuentaController;
 use App\Http\Controllers\CarritoController;
-use App\Http\Controllers\DireccionController;
 
 Route::get('/nosotros', function () {
     return view('nosotros');
@@ -53,6 +52,10 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::get('/catalogos', function () {
+    return view('catalogos');
+})->name('catalogos');
 
 Route::get('/catalogoInteligente', function () {
     return view('catalogoInteligente');
