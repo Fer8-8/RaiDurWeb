@@ -21,7 +21,6 @@
 
     <!-- Google Fonts: Saira -->
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body style="margin-top:0px; padding-top:66px;">
     <div id="app">
@@ -54,7 +53,28 @@
                         <a href="{{ route('login') }}" type="button" class="btn btn-primary px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN </strong></a>
 
                     @else
-                        <li class="nav-item">asdfajsfd</li>
+                    <div class="btn-group mx-3 me-5 dropdown-center">
+                      <a href="{{ route('cuenta') }}" style="min-width: 80px;" type="button" class="btn btn-primary px-2"><strong class="text-shadow-sm" >{{ Auth::user()->userName }}</strong></a>
+                      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                        </li>
+                      </ul>
+                    </div>
+                    
                     @endguest
                     <!-- Authentication Links -->
                     <!---
@@ -107,7 +127,7 @@
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <div class="col-md-5 col-lg-4 col-xl-3 mb-4">
           <!-- Content -->
           <h2 class="fw-bold mb-1">
             RaiDur
@@ -126,7 +146,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h2 class="text-uppercase fw-bold mb-4">
             Sobre nosotros
@@ -144,7 +164,7 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-5 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h2 class="text-uppercase fw-bold mb-4">
             Contacto
