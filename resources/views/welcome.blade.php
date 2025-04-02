@@ -37,16 +37,21 @@
     <div class="row justify-content-center m-0 p-0">
         <a href="{{ route('tinacos') }}" class="col-2 text-center">
             <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/cisternav2F.svg') }}" alt="tinacos">
-        </a>
+            <p>Tinacos</p>
+          </a>
         <a href="{{ route('cisternas') }}" class="col-2 text-center">
             <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/cisternav3F.svg') }}" alt="cisterna">
-        </a>
+            <p>Cisternas</p>
+          </a>
         <a href="{{ route('calentadores') }}" class="col-2 text-center">
             <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/calentadorT.svg') }}" alt="calentadores">
-        </a>
+            <p>Calentadores</p>
+          </a>
         <a href="{{ route('articulos') }}" class="col-2 text-center">
             <img class="img-fluid" style="height: 100px; width: auto;" src="{{ asset('SVGs/TuberiaT.svg') }}" alt="otros">
-        </a>
+            <p>Otros</p>
+
+          </a>
     </div>
 </div>
 
