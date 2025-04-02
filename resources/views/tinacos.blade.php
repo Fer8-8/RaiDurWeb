@@ -32,10 +32,10 @@
             @foreach($tinacos as $tinaco)
                 <div class="col-md-6 mb-4">
                     <div class="card shadow-lg border-0 rounded-4 p-3">
-                        <h5 class="fw-bold">{{ $tinaco->nombre }}</h5>
+                        <h5 class="fw-bold text-center fs-2">{{ $tinaco->nombre }}</h5>
                         <img src="{{ asset($tinaco->imagen) }}" height='300px' style="object-fit: contain" class="">
-                        <h4 class="text-danger fw-bold mt-3">${{ number_format($tinaco->precio, 2) }}</h4>
-                        <p class="text-muted">{{ $tinaco->descripcion }}</p>
+                        <h4 class="text-danger fw-bold mt-3 text-center fs-1">${{ number_format($tinaco->precio, 2) }}</h4>
+                        <p class="text-muted text-center">{{ $tinaco->descripcion }}</p>
                         <button class="btn btn-warning fw-bold fs-4">AGREGAR AL CARRITO</button>
                     </div>
                 </div>
