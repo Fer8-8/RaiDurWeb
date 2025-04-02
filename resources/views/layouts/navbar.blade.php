@@ -21,7 +21,6 @@
 
     <!-- Google Fonts: Saira -->
     <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 </head>
 <body style="margin-top:0px; padding-top:66px;">
     <div id="app">
@@ -41,11 +40,12 @@
                 <ul class="navbar-nav ms-auto gap-5">
 
                     <li class="nav-item">
-                        <a href="" class="nav-link text-white">Servicios</a>
+                        <a href="{{ url('/servicios') }}" class="nav-link text-white">Servicios</a>
                     </li>
                     <li class="nav-item">
                     <a href="{{ url('/nosotros') }}" class="nav-link text-white saira-font">Nosotros</a>
                       </li>
+
                     <li class="nav-item">
                     <a href="{{ url('/faqs') }}" class="nav-link text-white saira-font">FAQs</a>
                     </li>
@@ -53,7 +53,28 @@
                         <a href="{{ route('login') }}" type="button" class="btn btn-primary px-2 mx-3"><strong class="text-shadow-sm">INICIAR SESIÓN </strong></a>
 
                     @else
-                        <li class="nav-item">asdfajsfd</li>
+                    <div class="btn-group mx-3 me-5 dropdown-center">
+                      <a href="{{ route('cuenta') }}" style="min-width: 80px;" type="button" class="btn btn-primary px-2"><strong class="text-shadow-sm" >{{ Auth::user()->userName }}</strong></a>
+                      <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                      </button>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Carrito</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                        </li>
+                      </ul>
+                    </div>
+                    
                     @endguest
                     <!-- Authentication Links -->
                     <!---
@@ -102,16 +123,16 @@
 
   <!-- Section: Links  -->
   <section class="">
-    <div class="container text-center text-md-start mt-5">
+    <div class="container text-center text-md-start mt-3">
       <!-- Grid row -->
       <div class="row mt-3">
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+        <div class="col-md-5 col-lg-4 col-xl-3 mb-4">
           <!-- Content -->
           <h2 class="fw-bold mb-1">
             RaiDur
           </h2>
-          <h4 class="mb-3 fs-1">Nuestras redes</h4>
+          <p class="mb-3 fs-4">Nuestras redes</p>
           <svg  class="mx-2"xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
             <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
           </svg>
@@ -125,43 +146,36 @@
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Products
-          </h6>
+          <h2 class="text-uppercase fw-bold mb-4">
+            Sobre nosotros
+          </h2>
           <p>
-            <a href="#!" class="text-reset">Angular</a>
+            <a href="#!" class="text-reset">Comunidad</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">React</a>
+            <a href="#!" class="text-reset">Oportunidades</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Vue</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Laravel</a>
+            <a href="#!" class="text-reset">Nuestra historia</a>
           </p>
         </div>
         <!-- Grid column -->
 
         <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div class="col-md-5 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
+          <h2 class="text-uppercase fw-bold mb-4">
+            Contacto
+          </h2>
           <p>
-            <a href="#!" class="text-reset">Pricing</a>
+            Calle Nazas #106,
+            Valles del Guadiana, 34270
+            Durango, Dgo
           </p>
           <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
+            Tel. 618 201 8555
           </p>
         </div>
         <!-- Grid column -->

@@ -5,8 +5,20 @@ use App\Http\Controllers\ContactoController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\TinacoController;
 use App\Http\Controllers\SolarController;
-use App\Http\Controllers\DireccionController;
+use App\Http\Controllers\CisternasController;
 use App\Http\Controllers\CuentaController;
+
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
+
+Route::get('/faqs', function () {
+    return view('faqs');
+});
+
+Route::get('/servicios', function () {
+    return view('servicios');
+});
 
 Route::get('/solares', [SolarController::class, 'index'])->name('calentadores');
 
@@ -39,14 +51,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/contacto/enviar', [ContactoController::class, 'enviar'])->name('contacto.enviar');
-
-
-
-
 
 Route::get('/articulos', [ProductoController::class, 'index'])->name('articulos');

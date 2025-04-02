@@ -46,9 +46,9 @@
             @csrf
             <div class="mb-3 text-start fw-bold">
                 <label class="form-label">Nombre:</label>
-                <input id="nombre" type="text" class="form-control border @error('nombre') is invalid @enderror border-black" name="nombre" required autocomplete="nombre" autofocus>
+                <input id="name" type="text" class="form-control border @error('name') is invalid @enderror border-black" name="name" value="{{old('name')}}" required autocomplete="name" autofocus>
 
-                @error('nombre')
+                @error('name')
                     <span class="invalid-feedback">
                         <strong>{{$message}}</strong>
                     </span>
@@ -56,19 +56,37 @@
             </div>
             <div class="mb-3 text-start fw-bold">
                 <label class="form-label">Nombre de usuario:</label>
-                <input id="usuario" class="form-control border border-black" required>
+                <input id="userName" type="text" class="form-control border border-black @error('userName') is invalid @enderror" name="userName" required autocomplete="userName" autofocus>
+
+                @error('userName')
+                    <span class="invalid-feedback">
+                        <strong>{{$message}}</strong>
+                    </span>
+                @enderror
             </div>
             <div class="mb-3 text-start fw-bold">
-                <label for="mail" class="form-label">Correo electronico:</label>
-                <input type="mail" class="form-control border border-black" required>
+                <label for="email" class="form-label">Correo electronico:</label>
+                <input id="email" type="email" class="form-control border border-black @error('email') is-invalid @enderror" name="email" value="{{old('email')}}" required autocomplete="email">
+
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{$message}}</strong>
+                    </span>
+                @enderror
             </div>
             <div class="mb-3 text-start fw-bold">
                 <label for="password" class="form-label">Contraseña:</label>
-                <input type="password" class="form-control border border-black" required>
+                <input id="password" type="password" class="form-control border border-black @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{$message}}</strong>
+                    </span>
+                @enderror
             </div>
             <div class="mb-3 text-start fw-bold">
                 <label for="password" class="form-label">Confirmar contraseña:</label>
-                <input type="password" class="form-control border border-black" required>
+                <input id="password-confirm" type="password" class="form-control border border-black" name="password_confirmation" required autocomplete="password_confirmation">
             </div>
             <div class="d-flex justify-content-between align-items-center mb-3">
                 <div>

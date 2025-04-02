@@ -42,7 +42,7 @@
         <div class="d-flex justify-content-center box my-3">  
             <img src="Images/Logo.png" alt="RaiDur Logo" class="logo">
         </div>
-        <form method="POST" action="{{ route('login') }} class="mt-5">
+        <form method="POST" action="{{ route('login') }}" class="mt-5">
             @csrf
             <div class="mb-3 text-start fw-bold">
                 <label for="mail" class="form-label">Correo electrónico:</label>
@@ -77,7 +77,7 @@
             <button class="btn p-1 btn-light mx-3 login-btn flex-growth-1">Continue with Google</button>
             <button class="btn p-1 btn-primary login-btn text-white flex-growth-1 f-btn">Continue with Facebook</button>
         </div>
-        <p class="mt-3">¿No tienes cuenta? <a href="#">Regístrate aquí</a></p>
+        <p class="mt-3">¿No tienes cuenta? <a href="{{route("register")}}">Regístrate aquí</a></p>
     </div>
 </div>
 
