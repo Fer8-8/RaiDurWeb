@@ -147,7 +147,7 @@
       box-shadow: 0 0 8px #e6b800;
       transform: scale(1.03);
     }
-    .form-actions {
+    /* .form-actions {
       grid-column: 1 / -1;
       display: flex;
       justify-content: center;
@@ -166,7 +166,7 @@
     .form-actions button:hover {
       transform: scale(1.08) rotate(-1deg);
       box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-    }
+    } */
     .guardar {
       background-color: #e6b800;
       color: #000;
