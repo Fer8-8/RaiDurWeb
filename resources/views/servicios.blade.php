@@ -58,6 +58,7 @@
         color: black;
         font-weight: 600 !important;
     }
+    
     .service-card p {
         font-size: 0.9rem;
         color: #333;
