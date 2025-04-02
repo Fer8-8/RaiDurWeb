@@ -3,6 +3,8 @@
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+
+
 <div class="container mt-5">
     <div class="row">
         <!-- Sidebar con categorías y filtros -->
@@ -63,4 +65,5 @@
         });
     });
 </script>
+
 @endsection
