@@ -9,12 +9,13 @@
 
         <!-- Card: Dirección de envío -->
         <div class="bg-white shadow-lg rounded-5 py-3 px-5 mt-4 border relative">
-            <div class="d-flex justify-content-between align-items-center">   
-                <h3 class="font-semibold d-inline text-gray-700 mt-6">Dirección de envío:</h3>
-                <a href="{ url('/direccion') }" class="text-info hover:underline absolute top-2 right-2">Cambiar</a>
-            </div>
-            <p class="text-gray-600">Calle Amanecer #412, Jardines de Durango, Victoria de Durango, Durango, 12345, México.</p>
-        </div>
+    <div class="d-flex justify-content-between align-items-center">   
+        <h3 class="font-semibold d-inline text-gray-700 mt-6">Dirección de envío:</h3>
+        <a href="{{ route('direccion') }}" class="text-info hover:underline absolute top-2 right-2">Cambiar</a>
+    </div>
+    <p class="text-gray-600">Calle Amanecer #412, Jardines de Durango, Victoria de Durango, Durango, 12345, México.</p>
+</div>
+
 
         <!-- Card: Método de pago -->
         <div class="bg-white shadow-lg rounded-5 py-3 px-5 mt-4 border relative">

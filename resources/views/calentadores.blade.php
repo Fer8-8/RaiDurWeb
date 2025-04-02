@@ -24,10 +24,10 @@
                 @foreach($calentadores as $calentador)
                     <div class="col-md-6 mb-4">
                         <div class="card shadow-lg border-0 rounded-4 p-3">
-                            <h5 class="fw-bold">{{ $calentador->nombre }}</h5>
+                            <h5 class="fw-bold text-center fs-2">{{ $calentador->nombre }}</h5>
                             <img src="{{ asset($calentador->imagen) }}" height='300px' style="object-fit: contain" class="">
-                            <h4 class="text-danger fw-bold mt-3">${{ number_format($calentador->precio, 2) }}</h4>
-                            <p class="text-muted">{{ $calentador->descripcion }}</p>
+                            <h4 class="text-danger fw-bold mt-3 text-center fs-1">${{ number_format($calentador->precio, 2) }}</h4>
+                            <p class="text-muted text-center">{{ $calentador->descripcion }}</p>
                             <button class="btn btn-warning fw-bold fs-4">AGREGAR AL CARRITO</button>
                         </div>
                     </div>
