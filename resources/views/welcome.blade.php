@@ -141,4 +141,79 @@
     </div>
   </div>
 </div>
+<style> 
+    body {
+  animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+input {
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+input:focus {
+  outline: none;
+  border-color: #e6b800;
+  box-shadow: 0 0 8px #e6b800;
+  transform: scale(1.03);
+}
+
+button {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+button:hover {
+  transform: scale(1.08) rotate(-1deg);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.profile-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(230,184,0,0.6); }
+  100% { transform: scale(1); }
+}
+
+.container, .card {
+  animation: slideInUp 0.8s ease;
+}
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+nav a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: #e6b800;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+nav a:hover {
+  color: #e6b800;
+}
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.social i {
+  transition: transform 0.3s ease;
+}
+.social i:hover {
+  transform: scale(1.3);
+}
+</style>
 @endsection
