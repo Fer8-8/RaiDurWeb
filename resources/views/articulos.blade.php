@@ -30,7 +30,7 @@
         <div class="col-md-9">
             <div class="row" id="product-grid">
                 @foreach($productos as $producto)
-                    <div class="col-md-6 mb-4 product-card {{ strtolower(str_replace(' ', '', $producto->categoria)) }}">
+                    <div class="col-md-6 mb-4 product-card {{ str_replace(' ', '', $producto->categoria) }}">
                         <div class="card shadow-lg border-0 rounded-4 p-3">
                             <h5 class="fw-bold text-center fs-2">{{ $producto->nombre }}</h5>
                             <img src="{{ asset($producto->imagen) }}" height='300px' style="object-fit: contain" class="">

@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
             'descripcion' => 'Pintura Doal / cubeta 19 litros / coronel exterior',
             'precio' => 950,
             'imagen' => 'Images/imageotros3.png',
-            'categoria'=>'Pintura'
+            'categoria'=>'pintura'
         ]);
 
         Producto::create([
@@ -44,7 +44,7 @@ class DatabaseSeeder extends Seeder
             'descripcion' => 'Biodigestor / marca Suplast / 0.83 mts / 1.57 mts',
             'precio' => 5195,
             'imagen' => 'Images/imageotros4.png',
-            'categoria'=>'Biodigestor'
+            'categoria'=>'biodigestores'
         ]);
 
         Producto::create([
@@ -52,7 +52,7 @@ class DatabaseSeeder extends Seeder
             'descripcion' => 'Marca Mirage / 6 litros / 1 solo baño',
             'precio' => 1750,
             'imagen' => 'Images/imageotros5.png',
-            'categoria'=>'Boiler'
+            'categoria'=>'boiler'
         ]);
         
         Producto::create([
@@ -60,7 +60,7 @@ class DatabaseSeeder extends Seeder
             'descripcion' => 'Marca Cato / tanque / lavamanos / color blanco',
             'precio' => 2850,
             'imagen' => 'Images/imageotros6.png',
-            'categoria'=>'Baño'
+            'categoria'=>'juego'
         ]);
         Producto::create([
             'nombre' => 'MIRAGE X32 ',
@@ -74,22 +74,23 @@ class DatabaseSeeder extends Seeder
             'descripcion' => 'Biodigestor / marca Suplast / 1.47 mts / 1.80 mts',
             'precio' => 15800,
             'imagen' => 'Images/imageotros8.png',
-            'categoria'=>'Biodigestor'
+            'categoria'=>'biodigestores'
         ]);
         Producto::create([
             'nombre' => 'BOILER DE PASO 16 LTS',
             'descripcion' => 'Marca Mirage / 16 litros / 3 baños',
             'precio' => 6900,
             'imagen' => 'Images/imageotros9.png',
-            'categoria'=>'Boiler'
+            'categoria'=>'boiler'
         ]);
         Producto::create([
             'nombre' => 'DOAL',
             'descripcion' => 'Pintura Doal / cubeta 19 litros / casa-',
             'precio' => 780,
             'imagen' => 'Images/imageotros10.png',
-            'categoria'=>'Pintura'
+            'categoria'=>'pintura'
         ]);
+        
         Tinacos::create([
             'nombre' => 'TINACO 1,100 lts',
             'descripcion' => 'Tricapa / Diámetro 1.10 mts / Altura 1.41 mts',

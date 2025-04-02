@@ -64,16 +64,19 @@
         }
         .valores {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 10px;
         }
         .valores-box {
-            background: #f1c40f;
-            padding: 15px;
-            border-radius: 5px;
-            font-size: 0.9rem;
-            font-weight: bold;
-            display: inline-block;
-        }
+    background: rgba(241, 196, 15, 0.3); /* Amarillo con opacidad del 70% */
+    padding: 15px 40px; /* Más padding en los lados para dar forma ovalada */
+    border-radius: 50px; /* Bordes redondeados para hacer un óvalo */
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    margin: 25px auto !important; /* Centrado horizontalmente */
+}
+
     </style>
 </head>
 <body>
